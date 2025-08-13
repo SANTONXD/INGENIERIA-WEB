@@ -123,10 +123,17 @@ footer a:hover {
 }
 
 /* ===== Responsividad ===== */
+/* Mostrar menú cuando tenga la clase .active */
 @media (max-width: 768px) {
-    /* Menú hamburguesa visible en móviles */
-    .menu-toggle {
+    .main-nav.active {
         display: block;
+        background-color: var(--color-principal);
+        padding: 1rem;
+    }
+
+    .main-nav ul li {
+        display: block;
+        margin: 10px 0;
     }
 
     /* Ocultar menú en móviles */
