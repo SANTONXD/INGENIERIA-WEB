@@ -1,0 +1,49 @@
+@use './variables' as v;
+
+/* ===== Responsividad ===== */
+@media (max-width: 768px) {
+    
+    /* Botón hamburguesa visible en móvil */
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        color: #fff;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    /* Ocultar menú por defecto en móvil */
+    .main-nav {
+        display: none;
+        position: absolute;
+        top: 60px; /* altura del header */
+        right: 0;
+        width: 200px;
+        background-color: v.$color-principal;
+        padding: 1rem;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Mostrar menú cuando está activo */
+    .main-nav.active {
+        display: block;
+    }
+
+    /* Items del menú en columna */
+    .main-nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    /* Contacto en columna */
+    .contact-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Foto más pequeña en móvil */
+    .profile-pic {
+        width: 120px;
+    }
+}
