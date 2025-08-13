@@ -1,0 +1,17 @@
+@use './variables';
+@use './personal';
+@use './teaser';
+@use './skills';
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: variables.$color-fondo;
+    color: variables.$color-texto;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
