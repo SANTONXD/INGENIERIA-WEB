@@ -125,6 +125,12 @@ footer a:hover {
 /* ===== Responsividad ===== */
 /* Mostrar menú cuando tenga la clase .active */
 @media (max-width: 768px) {
+    /* Ocultar menú en móviles por defecto */
+    .main-nav {
+        display: none;
+    }
+
+    /* Mostrar menú cuando tenga la clase .active */
     .main-nav.active {
         display: block;
         background-color: var(--color-principal);
@@ -134,11 +140,6 @@ footer a:hover {
     .main-nav ul li {
         display: block;
         margin: 10px 0;
-    }
-
-    /* Ocultar menú en móviles */
-    .main-nav {
-        display: none;
     }
 
     /* Contacto en columna */
@@ -151,3 +152,4 @@ footer a:hover {
         width: 120px;
     }
 }
+
