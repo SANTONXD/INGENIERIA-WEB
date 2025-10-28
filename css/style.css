@@ -1,1 +1,163 @@
 h1,h2,h3{font-family:"Montserrat",sans-serif;color:#0d3b66}.container{width:90%;max-width:1100px;margin:auto}header{background-color:#0d3b66;color:#fff}.header-container{display:flex;justify-content:space-between;align-items:center;padding:1rem 0}.logo{font-size:1.5rem;font-weight:bold}.main-nav ul{list-style:none;padding:0;margin:0}.main-nav ul li{display:inline-block;margin-left:15px}.main-nav a{color:#fff;text-decoration:none}.main-nav a:visited{color:#fff}.main-nav a:hover{color:#2274a5}.menu-toggle{display:none;background:none;border:none;color:#fff;font-size:1.5rem;cursor:pointer}.contact-container{display:flex;align-items:center;gap:2rem;padding:2rem 0}.profile-pic{width:150px;border-radius:50%}.social-links a{margin-right:10px;color:#0d3b66;font-size:1.3rem}.social-links a:hover{color:#2274a5}section{padding:2rem 0;border-bottom:1px solid #2274a5}footer{background:#0d3b66;color:#fff;text-align:center;padding:1rem 0}footer a{color:#fff;text-decoration:none}footer a:hover{color:#2274a5}@media(max-width: 768px){.menu-toggle{display:block;background:none;border:none;color:#fff;font-size:1.5rem;cursor:pointer}.main-nav{display:none;position:absolute;top:60px;right:0;width:200px;background-color:#0d3b66;padding:1rem;box-shadow:0 2px 8px rgba(0,0,0,.2)}.main-nav.active{display:block}.main-nav ul li{display:block;margin:10px 0}.contact-container{flex-direction:column;text-align:center}.profile-pic{width:120px}}body{font-family:"Roboto",sans-serif;margin:0;background-color:#fff;color:#1a1a1a}.container{width:90%;max-width:1100px;margin:auto}/*# sourceMappingURL=style.css.map */
+
+.references-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.reference-card {
+    background: #f5f5f5;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.reference-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    object-fit: cover;
+}
+
+.reference-card h3 {
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.reference-card .position {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+
+.reference-card .company {
+    color: #444;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.reference-card .contact {
+    font-size: 0.9rem;
+    color: #777;
+    margin: 0.2rem 0;
+}
+
+.website-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #0056b3;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.website-btn:hover {
+    background-color: #007bff;
+}
+
+.website-btn i {
+    margin-right: 5px;
+}
+
+.contact-info-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.contact-form-container {
+    margin: 3rem auto;
+    width: 100%;
+    max-width: 600px;
+}
+
+@media (max-width: 768px) {
+    .contact-info-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.contact-form-container {
+    background: #f5f5f5;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 600px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-weight: 500;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #0d3b66;
+}
+
+.submit-btn {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #007bff;
+}
+
+.submit-btn i {
+    margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+    .contact-form-container {
+        padding: 1rem;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        padding: 0.6rem;
+    }
+}
+
+#contact-form-section {
+    background-color: #f9f9f9;
+    padding: 4rem 0;
+}
