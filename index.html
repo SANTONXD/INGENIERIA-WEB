@@ -3,21 +3,24 @@
 
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-DZX8PXN5WM"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DZX8PXN5WM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-DZX8PXN5WM');
-</script>
+        gtag('config', 'G-DZX8PXN5WM');
+    </script>
     <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-WNWL7WHL');</script>
-<!-- End Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WNWL7WHL');</script>
+    <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
@@ -37,10 +40,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </head>
 
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WNWL7WHL"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WNWL7WHL" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <!-- HEADER -->
     <header>
         <div class="container header-container"> <!-- antes: container-header-container -->
@@ -171,6 +174,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="container">
                 <h2>Referencias Profesionales</h2>
                 <div class="references-grid">
+
                     <div class="reference-card">
                         <img src="assets/images/imagen_ing.jpeg" alt="Foto de referencia profesional">
                         <h3>Ing. Juan Pérez</h3>
@@ -178,7 +182,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <p class="company">Tech Solutions S.A.</p>
                         <p class="contact">Email: juan.perez@techsolutions.com</p>
                         <p class="contact">Tel: +57 300 123 4567</p>
-                        <a href="https://araque08.com/" class="website-btn" target="_blank">
+                        <a href="https://araque08.com/?utm_source=portfolio&utm_medium=banner&utm_campaign=referencias_jaider"
+                            class="website-btn" target="_blank">
                             <i class="fas fa-globe"></i> Visitar Sitio Web
                         </a>
                     </div>
@@ -190,23 +195,34 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <p class="company">Digital Innovation Corp</p>
                         <p class="contact">Email: maria.g@digitalinnovation.com</p>
                         <p class="contact">Tel: +57 310 987 6543</p>
-                        <a href="https://josebenjumea.site/" class="website-btn" target="_blank">
+                        <a href="https://josebenjumea.site/?utm_source=portfolio&utm_medium=banner&utm_campaign=referencias_jaider"
+                            class="website-btn" target="_blank">
                             <i class="fas fa-globe"></i> Visitar Sitio Web
                         </a>
                     </div>
+
                 </div>
             </div>
         </section>
 
-    <!-- FOOTER -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Jaider Santiago Molina Preciado. Todos los derechos reservados.</p>
-            <a href="#">Política de privacidad</a>
-        </div>
-    </footer>
-    <script src="./assets/js/menu.js"></script>
-    <script src="./assets/js/contact-form.js"></script>
+        <!-- FOOTER -->
+        <footer>
+            <div class="container">
+                <p>&copy; 2025 Jaider Santiago Molina Preciado. Todos los derechos reservados.</p>
+                <a href="#">Política de privacidad</a>
+            </div>
+        </footer>
+        <script src="./assets/js/menu.js"></script>
+        <script src="./assets/js/contact-form.js"></script>
 </body>
-
+<script>
+  document.querySelectorAll('.website-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      gtag('event', 'click_banner', {
+        event_category: 'interaccion',
+        event_label: btn.href
+      });
+    });
+  });
+</script>
 </html>
