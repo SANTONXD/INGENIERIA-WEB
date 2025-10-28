@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     try {
-      const response = await fetch('https://backend-ingenieria-web-main.onrender.com/', {
+      const response = await fetch('https://backend-ingenieria-web-main.onrender.com/api/mensaje/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
