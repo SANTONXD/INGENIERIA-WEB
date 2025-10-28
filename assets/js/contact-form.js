@@ -22,6 +22,8 @@ document.addEventListener('DOMContentLoaded', () => {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify(data),
+        credentials: 'include', // 👈 Permite enviar cookies y CSRF
+        mode: 'cors',            // 👈 Activa CORS para origen cruzado
       });
 
       const result = await response.json();
@@ -30,7 +32,8 @@ document.addEventListener('DOMContentLoaded', () => {
         alert('✅ Mensaje enviado correctamente.');
         form.reset();
       } else {
-        alert('❌ Error al enviar: ' + (result.message || JSON.stringify(result)));
+        console.error('Error del servidor:', result);
+        alert('❌ Error al enviar: ' + (result.message || 'Error desconocido.'));
       }
     } catch (error) {
       console.error('Error al conectar con el servidor:', error);
