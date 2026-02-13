@@ -369,3 +369,9 @@ footer a:hover{
   padding:.6rem;
  }
 }
+
+/* LINK ACTIVO EN EL MENU */
+.main-nav a.active{
+ background:rgba(255,255,255,.25);
+ border:2px solid rgba(255,255,255,.7);
+}
