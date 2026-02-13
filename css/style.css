@@ -1,171 +1,6 @@
-h1,h2,h3{font-family:"Montserrat",sans-serif;color:#0d3b66}.container{width:90%;max-width:1100px;margin:auto}header{background-color:#0d3b66;color:#fff}.header-container{display:flex;justify-content:space-between;align-items:center;padding:1rem 0}.logo{font-size:1.5rem;font-weight:bold}.main-nav ul{list-style:none;padding:0;margin:0}.main-nav ul li{display:inline-block;margin-left:15px}.main-nav a{color:#fff;text-decoration:none}.main-nav a:visited{color:#fff}.main-nav a:hover{color:#2274a5}.menu-toggle{display:none;background:none;border:none;color:#fff;font-size:1.5rem;cursor:pointer}.contact-container{display:flex;align-items:center;gap:2rem;padding:2rem 0}.profile-pic{width:150px;border-radius:50%}.social-links a{margin-right:10px;color:#0d3b66;font-size:1.3rem}.social-links a:hover{color:#2274a5}section{padding:2rem 0;border-bottom:1px solid #2274a5}footer{background:#0d3b66;color:#fff;text-align:center;padding:1rem 0}footer a{color:#fff;text-decoration:none}footer a:hover{color:#2274a5}@media(max-width: 768px){.menu-toggle{display:block;background:none;border:none;color:#fff;font-size:1.5rem;cursor:pointer}.main-nav{display:none;position:absolute;top:60px;right:0;width:200px;background-color:#0d3b66;padding:1rem;box-shadow:0 2px 8px rgba(0,0,0,.2)}.main-nav.active{display:block}.main-nav ul li{display:block;margin:10px 0}.contact-container{flex-direction:column;text-align:center}.profile-pic{width:120px}}body{font-family:"Roboto",sans-serif;margin:0;background-color:#fff;color:#1a1a1a}.container{width:90%;max-width:1100px;margin:auto}/*# sourceMappingURL=style.css.map */
-
-.references-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.reference-card {
-    background: #f5f5f5;
-    padding: 1.5rem;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.reference-card img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    margin-bottom: 1rem;
-    object-fit: cover;
-}
-
-.reference-card h3 {
-    color: #333;
-    margin-bottom: 0.5rem;
-}
-
-.reference-card .position {
-    color: #666;
-    font-style: italic;
-    margin-bottom: 0.5rem;
-}
-
-.reference-card .company {
-    color: #444;
-    font-weight: 500;
-    margin-bottom: 1rem;
-}
-
-.reference-card .contact {
-    font-size: 0.9rem;
-    color: #777;
-    margin: 0.2rem 0;
-}
-
-.website-btn {
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 0.5rem 1rem;
-    background-color: #0056b3;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.website-btn:hover {
-    background-color: #007bff;
-}
-
-.website-btn i {
-    margin-right: 5px;
-}
-
-.contact-info-wrapper {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    margin-bottom: 2rem;
-}
-
-.contact-form-container {
-    margin: 3rem auto;
-    width: 100%;
-    max-width: 600px;
-}
-
-@media (max-width: 768px) {
-    .contact-info-wrapper {
-        flex-direction: column;
-        text-align: center;
-    }
-}
-
-.contact-form-container {
-    background: #f5f5f5;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    margin-top: 2rem;
-    width: 100%;
-    max-width: 600px;
-}
-
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-.form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.form-group label {
-    font-weight: 500;
-    color: #333;
-}
-
-.form-group input,
-.form-group textarea {
-    padding: 0.8rem;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 1rem;
-    transition: border-color 0.3s ease;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-    outline: none;
-    border-color: #0d3b66;
-}
-
-.submit-btn {
-    background-color: #0056b3;
-    color: white;
-    border: none;
-    padding: 1rem;
-    border-radius: 4px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.submit-btn:hover {
-    background-color: #007bff;
-}
-
-.submit-btn i {
-    margin-right: 8px;
-}
-
-@media (max-width: 768px) {
-    .contact-form-container {
-        padding: 1rem;
-    }
-    
-    .form-group input,
-    .form-group textarea {
-        padding: 0.6rem;
-    }
-}
-
-#contact-form-section {
-    background-color: #f9f9f9;
-    padding: 4rem 0;
-}
-
 /* ================================= */
-/* MATERIAL DESIGN INGENIERIA WEB 2 */
+/* VARIABLES MATERIAL DESIGN */
 /* ================================= */
-
 :root{
  --md-primary:#1976d2;
  --md-primary-dark:#0d47a1;
@@ -178,40 +13,43 @@ h1,h2,h3{font-family:"Montserrat",sans-serif;color:#0d3b66}.container{width:90%;
  --md-shadow-hover:0 8px 18px rgba(0,0,0,.18);
 }
 
-/* Scroll Material */
+/* ================================= */
+/* BASE GLOBAL */
+/* ================================= */
 html{
  scroll-behavior:smooth;
 }
 
-/* Fondo general */
 body{
+ font-family:"Roboto",sans-serif;
+ margin:0;
  background:var(--md-bg);
  color:var(--md-text);
  line-height:1.6;
 }
 
-/* App Bar estilo Google */
-header{
- background:var(--md-primary);
- box-shadow:var(--md-shadow);
- position:sticky;
- top:0;
- z-index:999;
+*{
+ transition:all .2s ease;
 }
 
-/* Navegación */
-.main-nav a{
- border-radius:10px;
- padding:.4rem .7rem;
- transition:.25s;
+h1,h2,h3{
+ font-family:"Montserrat",sans-serif;
+ color:#0d3b66;
 }
 
-.main-nav a:hover{
- background:rgba(255,255,255,.2);
- transform:translateY(-1px);
+h1{font-size:2.4rem;font-weight:700}
+h2{font-size:1.9rem;font-weight:600}
+h3{font-size:1.3rem;font-weight:500}
+
+/* ================================= */
+/* LAYOUT GENERAL */
+/* ================================= */
+.container{
+ width:90%;
+ max-width:1100px;
+ margin:auto;
 }
 
-/* Superficies Material */
 section{
  background:var(--md-surface);
  border-radius:var(--md-radius);
@@ -219,25 +57,81 @@ section{
  margin:1.5rem auto;
  padding:2.5rem 0;
  border:none;
- transition:.25s;
 }
 
 section:hover{
  box-shadow:var(--md-shadow-hover);
 }
 
-/* Jerarquía tipográfica real */
-h1{font-size:2.4rem;font-weight:700}
-h2{font-size:1.9rem;font-weight:600}
-h3{font-size:1.3rem;font-weight:500}
+/* ================================= */
+/* HEADER */
+/* ================================= */
+header{
+ background:var(--md-primary);
+ color:#fff;
+ position:sticky;
+ top:0;
+ z-index:999;
+ box-shadow:var(--md-shadow);
+}
 
-/* Perfil card */
+.header-container{
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ padding:1rem 0;
+}
+
+.logo{
+ font-size:1.5rem;
+ font-weight:bold;
+}
+
+.menu-toggle{
+ display:none;
+ background:none;
+ border:none;
+ color:#fff;
+ font-size:1.5rem;
+ cursor:pointer;
+}
+
+/* NAV */
+.main-nav ul{
+ list-style:none;
+ padding:0;
+ margin:0;
+}
+
+.main-nav ul li{
+ display:inline-block;
+ margin-left:15px;
+}
+
+.main-nav a{
+ color:#fff;
+ text-decoration:none;
+ border-radius:10px;
+ padding:.4rem .7rem;
+}
+
+.main-nav a:hover{
+ background:rgba(255,255,255,.2);
+ transform:translateY(-1px);
+}
+
+/* ================================= */
+/* PERFIL / CONTACT INFO */
+/* ================================= */
 .contact-info-wrapper{
- background:var(--md-surface);
+ display:flex;
+ align-items:center;
+ gap:2rem;
+ margin-bottom:2rem;
  padding:2rem;
+ background:var(--md-surface);
  border-radius:var(--md-radius);
  box-shadow:var(--md-shadow);
- transition:.25s;
 }
 
 .contact-info-wrapper:hover{
@@ -245,26 +139,42 @@ h3{font-size:1.3rem;font-weight:500}
  box-shadow:var(--md-shadow-hover);
 }
 
-/* Cards proyectos */
-#projects article{
- background:var(--md-surface);
- border-radius:var(--md-radius);
- padding:1.5rem;
+.profile-pic{
+ width:150px;
+ border-radius:50%;
  box-shadow:var(--md-shadow);
- transition:.25s;
 }
 
-#projects article:hover{
- transform:translateY(-6px);
- box-shadow:var(--md-shadow-hover);
+.profile-pic:hover{
+ transform:scale(1.05);
 }
 
-/* Cards referencias */
+.social-links a{
+ margin-right:10px;
+ color:#0d3b66;
+ font-size:1.3rem;
+}
+
+.social-links a:hover{
+ color:#2274a5;
+}
+
+/* ================================= */
+/* REFERENCIAS */
+/* ================================= */
+.references-grid{
+ display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+ gap:2rem;
+ margin-top:2rem;
+}
+
 .reference-card{
  background:var(--md-surface);
+ padding:1.5rem;
  border-radius:var(--md-radius);
+ text-align:center;
  box-shadow:var(--md-shadow);
- transition:.25s;
 }
 
 .reference-card:hover{
@@ -272,15 +182,47 @@ h3{font-size:1.3rem;font-weight:500}
  box-shadow:var(--md-shadow-hover);
 }
 
-/* Botones Material PRO */
+.reference-card img{
+ width:120px;
+ height:120px;
+ border-radius:50%;
+ margin-bottom:1rem;
+ object-fit:cover;
+}
+
+.reference-card .position{
+ color:#666;
+ font-style:italic;
+ margin-bottom:.5rem;
+}
+
+.reference-card .company{
+ color:#444;
+ font-weight:500;
+ margin-bottom:1rem;
+}
+
+.reference-card .contact{
+ font-size:.9rem;
+ color:#777;
+ margin:.2rem 0;
+}
+
+/* ================================= */
+/* BOTONES */
+/* ================================= */
 .website-btn,
 .submit-btn{
+ display:inline-block;
+ border:none;
  border-radius:999px;
  background:var(--md-primary);
- box-shadow:var(--md-shadow);
- transition:.25s;
+ color:#fff;
+ padding:.7rem 1.2rem;
  font-weight:500;
  letter-spacing:.3px;
+ cursor:pointer;
+ box-shadow:var(--md-shadow);
 }
 
 .website-btn:hover,
@@ -290,51 +232,140 @@ h3{font-size:1.3rem;font-weight:500}
  box-shadow:var(--md-shadow-hover);
 }
 
-/* Inputs Material */
+.website-btn i,
+.submit-btn i{
+ margin-right:6px;
+}
+
+/* ================================= */
+/* FORMULARIO */
+/* ================================= */
+#contact-form-section{
+ background-color:#f9f9f9;
+ padding:4rem 0;
+}
+
+.contact-form-container{
+ margin:3rem auto;
+ width:100%;
+ max-width:600px;
+ background:#f5f5f5;
+ padding:2rem;
+ border-radius:8px;
+ box-shadow:0 2px 4px rgba(0,0,0,0.1);
+}
+
+.contact-form{
+ display:flex;
+ flex-direction:column;
+ gap:1.5rem;
+}
+
+.form-group{
+ display:flex;
+ flex-direction:column;
+ gap:.5rem;
+}
+
+.form-group label{
+ font-weight:500;
+ color:#333;
+}
+
 .form-group input,
 .form-group textarea{
- border-radius:10px;
+ padding:.8rem;
  border:1px solid #ccc;
- transition:.25s;
+ border-radius:10px;
+ font-size:1rem;
 }
 
 .form-group input:focus,
 .form-group textarea:focus{
+ outline:none;
  border-color:var(--md-primary);
  box-shadow:0 0 0 3px rgba(25,118,210,.2);
 }
 
-/* Avatar Material */
-.profile-pic{
+/* ================================= */
+/* PROYECTOS */
+/* ================================= */
+#projects article{
+ background:var(--md-surface);
+ border-radius:var(--md-radius);
+ padding:1.5rem;
  box-shadow:var(--md-shadow);
- transition:.25s;
 }
 
-.profile-pic:hover{
- transform:scale(1.05);
+#projects article:hover{
+ transform:translateY(-6px);
+ box-shadow:var(--md-shadow-hover);
 }
 
-/* Footer limpio */
-footer{
- box-shadow:0 -2px 6px rgba(0,0,0,.1);
-}
-
-/* Micro animaciones globales */
-*{
- transition:all .2s ease;
-}
-
-/* Footer Material sincronizado con Header */
+/* ================================= */
+/* FOOTER */
+/* ================================= */
 footer{
  background:var(--md-primary);
  color:#fff;
+ text-align:center;
+ padding:1rem 0;
  box-shadow:0 -2px 6px rgba(0,0,0,.15);
 }
 
 footer a{
  color:#fff;
+ text-decoration:none;
 }
 
 footer a:hover{
  color:#e3f2fd;
+}
+
+/* ================================= */
+/* RESPONSIVE */
+/* ================================= */
+@media(max-width:768px){
+
+ .menu-toggle{
+  display:block;
+ }
+
+ .main-nav{
+  display:none;
+  position:absolute;
+  top:60px;
+  right:0;
+  width:200px;
+  background-color:var(--md-primary);
+  padding:1rem;
+  box-shadow:0 2px 8px rgba(0,0,0,.2);
+ }
+
+ .main-nav.active{
+  display:block;
+ }
+
+ .main-nav ul li{
+  display:block;
+  margin:10px 0;
+ }
+
+ .contact-info-wrapper{
+  flex-direction:column;
+  text-align:center;
+ }
+
+ .profile-pic{
+  width:120px;
+ }
+
+ .contact-form-container{
+  padding:1rem;
+ }
+
+ .form-group input,
+ .form-group textarea{
+  padding:.6rem;
+ }
 }
