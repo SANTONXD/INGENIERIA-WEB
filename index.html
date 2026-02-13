@@ -51,7 +51,7 @@
             <div class="logo">Jaider Molina</div>
             <nav class="main-nav">
                 <ul>
-                    <li><a href="#contact">Contacto</a></li>
+                    <li><a href="#contact-info">Contacto</a></li>
                     <li><a href="#about">Perfil</a></li>
                     <li><a href="#skills">Técnicas</a></li>
                     <li><a href="#soft-skills">Blandas</a></li>
@@ -251,8 +251,37 @@
     });
   });
 </script>
+<script>
+/* ================================= */
+/* MENU ACTIVO SEGUN SECCION VISIBLE */
+/* ================================= */
 
+const sections = document.querySelectorAll("section[id]");
+const navLinks = document.querySelectorAll(".main-nav a");
+
+function activarMenu(){
+ let scrollY = window.pageYOffset;
+
+ sections.forEach(sec=>{
+   const sectionHeight = sec.offsetHeight;
+   const sectionTop = sec.offsetTop - 120;
+   const sectionId = sec.getAttribute("id");
+
+   if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+     navLinks.forEach(link=>{
+       link.classList.remove("active");
+       if(link.getAttribute("href") === "#" + sectionId){
+         link.classList.add("active");
+       }
+     });
+   }
+ });
+}
+
+window.addEventListener("scroll", activarMenu);
+</script>
 </html>
+
 
 
 
