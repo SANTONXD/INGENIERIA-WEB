@@ -252,10 +252,6 @@
   });
 </script>
 <script>
-/* ================================= */
-/* MENU ACTIVO SEGUN SECCION VISIBLE */
-/* ================================= */
-
 const sections = document.querySelectorAll("section[id]");
 const navLinks = document.querySelectorAll(".main-nav a");
 
@@ -264,10 +260,10 @@ function activarMenu(){
 
  sections.forEach(sec=>{
    const sectionHeight = sec.offsetHeight;
-   const sectionTop = sec.offsetTop - 120;
+   const sectionTop = sec.offsetTop - 150;
    const sectionId = sec.getAttribute("id");
 
-   if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+   if(scrollY >= sectionTop && scrollY < sectionTop + sectionHeight){
      navLinks.forEach(link=>{
        link.classList.remove("active");
        if(link.getAttribute("href") === "#" + sectionId){
@@ -276,11 +272,18 @@ function activarMenu(){
      });
    }
  });
+
+ /* 🔥 FIX PARA LA ULTIMA SECCION (REFERENCIAS) */
+ if(window.innerHeight + window.scrollY >= document.body.offsetHeight - 50){
+   navLinks.forEach(link=>link.classList.remove("active"));
+   document.querySelector('.main-nav a[href="#references"]').classList.add("active");
+ }
 }
 
 window.addEventListener("scroll", activarMenu);
 </script>
 </html>
+
 
 
 
