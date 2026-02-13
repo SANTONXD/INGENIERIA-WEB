@@ -161,3 +161,165 @@ h1,h2,h3{font-family:"Montserrat",sans-serif;color:#0d3b66}.container{width:90%;
     background-color: #f9f9f9;
     padding: 4rem 0;
 }
+
+/* ================================= */
+/* MATERIAL DESIGN INGENIERIA WEB 2 */
+/* ================================= */
+
+:root{
+ --md-primary:#1976d2;
+ --md-primary-dark:#0d47a1;
+ --md-accent:#00bcd4;
+ --md-bg:#f4f6f9;
+ --md-surface:#ffffff;
+ --md-text:#212121;
+ --md-radius:14px;
+ --md-shadow:0 2px 6px rgba(0,0,0,.12);
+ --md-shadow-hover:0 8px 18px rgba(0,0,0,.18);
+}
+
+/* Scroll Material */
+html{
+ scroll-behavior:smooth;
+}
+
+/* Fondo general */
+body{
+ background:var(--md-bg);
+ color:var(--md-text);
+ line-height:1.6;
+}
+
+/* App Bar estilo Google */
+header{
+ background:var(--md-primary);
+ box-shadow:var(--md-shadow);
+ position:sticky;
+ top:0;
+ z-index:999;
+}
+
+/* Navegación */
+.main-nav a{
+ border-radius:10px;
+ padding:.4rem .7rem;
+ transition:.25s;
+}
+
+.main-nav a:hover{
+ background:rgba(255,255,255,.2);
+ transform:translateY(-1px);
+}
+
+/* Superficies Material */
+section{
+ background:var(--md-surface);
+ border-radius:var(--md-radius);
+ box-shadow:var(--md-shadow);
+ margin:1.5rem auto;
+ padding:2.5rem 0;
+ border:none;
+ transition:.25s;
+}
+
+section:hover{
+ box-shadow:var(--md-shadow-hover);
+}
+
+/* Jerarquía tipográfica real */
+h1{font-size:2.4rem;font-weight:700}
+h2{font-size:1.9rem;font-weight:600}
+h3{font-size:1.3rem;font-weight:500}
+
+/* Perfil card */
+.contact-info-wrapper{
+ background:var(--md-surface);
+ padding:2rem;
+ border-radius:var(--md-radius);
+ box-shadow:var(--md-shadow);
+ transition:.25s;
+}
+
+.contact-info-wrapper:hover{
+ transform:translateY(-4px);
+ box-shadow:var(--md-shadow-hover);
+}
+
+/* Cards proyectos */
+#projects article{
+ background:var(--md-surface);
+ border-radius:var(--md-radius);
+ padding:1.5rem;
+ box-shadow:var(--md-shadow);
+ transition:.25s;
+}
+
+#projects article:hover{
+ transform:translateY(-6px);
+ box-shadow:var(--md-shadow-hover);
+}
+
+/* Cards referencias */
+.reference-card{
+ background:var(--md-surface);
+ border-radius:var(--md-radius);
+ box-shadow:var(--md-shadow);
+ transition:.25s;
+}
+
+.reference-card:hover{
+ transform:translateY(-6px);
+ box-shadow:var(--md-shadow-hover);
+}
+
+/* Botones Material PRO */
+.website-btn,
+.submit-btn{
+ border-radius:999px;
+ background:var(--md-primary);
+ box-shadow:var(--md-shadow);
+ transition:.25s;
+ font-weight:500;
+ letter-spacing:.3px;
+}
+
+.website-btn:hover,
+.submit-btn:hover{
+ background:var(--md-primary-dark);
+ transform:translateY(-2px);
+ box-shadow:var(--md-shadow-hover);
+}
+
+/* Inputs Material */
+.form-group input,
+.form-group textarea{
+ border-radius:10px;
+ border:1px solid #ccc;
+ transition:.25s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus{
+ border-color:var(--md-primary);
+ box-shadow:0 0 0 3px rgba(25,118,210,.2);
+}
+
+/* Avatar Material */
+.profile-pic{
+ box-shadow:var(--md-shadow);
+ transition:.25s;
+}
+
+.profile-pic:hover{
+ transform:scale(1.05);
+}
+
+/* Footer limpio */
+footer{
+ box-shadow:0 -2px 6px rgba(0,0,0,.1);
+}
+
+/* Micro animaciones globales */
+*{
+ transition:all .2s ease;
+}
